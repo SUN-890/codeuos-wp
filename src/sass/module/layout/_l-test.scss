@@ -1,0 +1,19 @@
+@use "global"as *;
+
+.l-test {
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  padding: rem(40) 0;
+  background-color: aquamarine;
+
+  @include mq("md") {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    padding: rem(40) 0;
+    background-color: aquamarine;
+  }
+}
